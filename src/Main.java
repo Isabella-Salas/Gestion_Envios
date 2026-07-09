@@ -15,6 +15,20 @@ public class Main {
             opcion = sc.nextInt();
             switch (opcion){
                 case 1:
+                    System.out.println("Seleccionar el tipo de envio: ");
+                    System.out.println("1. Estandar");
+                    System.out.println("2. Express");
+                    System.out.println("3. Internacional");
+                    int opcenv = sc.nextInt();
+                    switch(opcenv) {
+                        case 1:
+                        System.out.println("Cual es el nombre del destinatario: ");
+                        String nombreDestinatario = sc.next();
+                        System.out.println("Cuanto pesa en Kg");
+                        Double pesoKg = sc.nextDouble();
+                        //EnvioEstandar envest = new EnvioEstandar(nombreDestinatario, pesoKg,);
+                        break;
+                    }
                     break;
                 case 2:
 
