@@ -9,4 +9,12 @@ public class EmpresaMensajeria {
         this.paqueteList.add(paquete);
     }
 
+    public List<Paquete> imprimirListaPaquete(){ return this.paqueteList; }
+
+    public double calcularTotalGanancias() {
+        double totalAcumulado = 0.0;
+        for (Paquete paquete: this.paqueteList){ totalAcumulado += paquete.obtenerCostoEnvio();}
+        return totalAcumulado;
+    }
+
 }
