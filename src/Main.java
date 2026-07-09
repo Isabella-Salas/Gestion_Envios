@@ -17,6 +17,7 @@ public class Main {
                 case 1:
                     break;
                 case 2:
+
                     EmpresaMensajeria empresa = new EmpresaMensajeria();
                     System.out.println(empresa.imprimirListaPaquete());
                     System.out.println(empresa.calcularTotalGanancias());
