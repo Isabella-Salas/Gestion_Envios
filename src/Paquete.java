@@ -3,6 +3,10 @@ public abstract class Paquete {
     private Double pesoKg;
     private EstrategiaEnvio estrategiaEnvio;
 
+    public Paquete(){
+
+    }
+
     public Paquete(String nombreDestinatario, Double pesoKg, EstrategiaEnvio estrategiaEnvio) {
         this.nombreDestinatario = nombreDestinatario;
         this.pesoKg = pesoKg;

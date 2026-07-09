@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        EmpresaMensajeria empresa = new EmpresaMensajeria();
         int opcion;
         int op;
 
@@ -22,17 +22,21 @@ public class Main {
                     int opcenv = sc.nextInt();
                     switch(opcenv) {
                         case 1:
-                        System.out.println("Cual es el nombre del destinatario: ");
+
+                        /*System.out.println("Cual es el nombre del destinatario: ");
                         String nombreDestinatario = sc.next();
+
                         System.out.println("Cuanto pesa en Kg");
                         Double pesoKg = sc.nextDouble();
-                        //EnvioEstandar envest = new EnvioEstandar(nombreDestinatario, pesoKg,);
+                        EstrategiaEnvio estenv = new EnvioEstandar();
+                            nombreDestinatario,pesoKg,estenv.calcularCosto(pesoKg)
+                        empresa.agregarPaquete();*/
                         break;
                     }
                     break;
                 case 2:
 
-                    EmpresaMensajeria empresa = new EmpresaMensajeria();
+
                     System.out.println(empresa.imprimirListaPaquete());
                     System.out.println(empresa.calcularTotalGanancias());
                     break;
