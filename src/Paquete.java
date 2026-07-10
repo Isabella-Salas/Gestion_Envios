@@ -30,11 +30,5 @@ public abstract class Paquete {
     }
 
     @Override
-    public String toString() {
-        return "Paquete{" +
-                "nombreDestinatario='" + nombreDestinatario + '\'' +
-                ", pesoKg=" + pesoKg +
-                ", estrategiaEnvio=" + estrategiaEnvio +
-                '}';
-    }
+    public String toString() {return "Paquete: " + nombreDestinatario + pesoKg + estrategiaEnvio;}
 }
