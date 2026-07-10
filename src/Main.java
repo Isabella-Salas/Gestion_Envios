@@ -22,21 +22,30 @@ public class Main {
                     int opcenv = sc.nextInt();
                     switch(opcenv) {
                         case 1:
-
-                        /*System.out.println("Cual es el nombre del destinatario: ");
-                        String nombreDestinatario = sc.next();
-
-                        System.out.println("Cuanto pesa en Kg");
-                        Double pesoKg = sc.nextDouble();
-                        EstrategiaEnvio estenv = new EnvioEstandar();
-                            nombreDestinatario,pesoKg,estenv.calcularCosto(pesoKg)
-                        empresa.agregarPaquete();*/
+                            System.out.println("Cual es el nombre del destinatario: ");
+                            String nombreDestinatario = sc.next();
+                            System.out.println("Cuanto pesa en Kg");
+                            Double pesoKg = sc.nextDouble();
+                            //PaqueteEstandar envest = new PaqueteEstandar(nombreDestinatario, pesoKg,);
+                            break;
+                        case 2:
+                            System.out.println("Cual es el nombre del destinatario: ");
+                            String nombreDestinatarioExpress = sc.next();
+                            System.out.println("Cuanto pesa en Kg");
+                            Double pesoKgExpress = sc.nextDouble();
+                            //PaqueteExpress envesxp = new PaqueteExpress (nombreDestinatario, pesoKg,);
                         break;
+                        case 3:
+                            System.out.println("Cual es el nombre del destinatario: ");
+                            String nombreDestinatarioInternacional = sc.next();
+                            System.out.println("Cuanto pesa en Kg");
+                            Double pesoKgInternacional = sc.nextDouble();
+                            //PaqueteInternacional envint = new PaqueteInternacional (nombreDestinatario, pesoKg,);
+                            break;
                     }
                     break;
                 case 2:
-
-
+                    EmpresaMensajeria empresa = new EmpresaMensajeria();
                     System.out.println(empresa.imprimirListaPaquete());
                     System.out.println(empresa.calcularTotalGanancias());
                     break;
