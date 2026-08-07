@@ -8,6 +8,9 @@ public abstract class Paquete {
     }
 
     public Paquete(String nombreDestinatario, Double pesoKg, EstrategiaEnvio estrategiaEnvio) {
+        if(pesoKg <= 0){
+            throw new IllegalArgumentException("El peso del paquete debe ser mayor a 0");
+        }
         this.nombreDestinatario = nombreDestinatario;
         this.pesoKg = pesoKg;
         this.estrategiaEnvio = estrategiaEnvio;
